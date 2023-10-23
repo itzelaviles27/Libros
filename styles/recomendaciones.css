@@ -1,0 +1,144 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+	text-align: right;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center; 
+}
+
+nav ul li.logo {
+    margin-right: auto; 
+}
+
+nav ul li.logo input[type="text"] {
+    margin-right: 10px; 
+}
+
+nav ul li.logo button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+nav ul li.logo button:hover {
+    background-color: #444;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Resto de tu CSS... */
+
+
+main {
+    position: relative;
+    overflow: hidden;
+}
+.loguito{
+	border-radius: 10px;
+	max-width: 150px;
+}
+.background-pattern {
+    background-image: radial-gradient(
+        rgba(255, 255, 255, 0.1) 9%, 
+        transparent 30%
+    );
+    background-size: 12vmin 12vmin;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.background-image {
+    background-image: url(https://assets.brightspot.abebooks.a2z.com/dims4/default/7508104/2147483647/strip/true/crop/1240x930+0+0/resize/800x600!/format/jpg/quality/90/?url=http%3A%2F%2Fabebooks-brightspot.s3.us-west-2.amazonaws.com%2F1b%2Ff7%2F4aa3eed34488bdf8b20700c1c3b5%2Flrg-promo-rare-directory.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.7;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Contenido*/
+
+
+.lista-libros {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista-libros li {
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.lista-libros h2 {
+    margin: 0;
+}
+
+.lista-libros p {
+    margin: 5px 0;
+}
+
+.recomendaciones{
+    position: relative;
+    height: 100%;
+    overflow-y: auto; 
+    z-index: 1; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px; 
+}

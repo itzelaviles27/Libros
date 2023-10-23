@@ -1,0 +1,147 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+	text-align: right;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Cambio importante: ahora usamos flexbox */
+    align-items: center; /* Centra verticalmente los elementos en la barra de navegación */
+}
+
+nav ul li.logo {
+    margin-right: auto; /* Mueve el logo al lado izquierdo */
+}
+
+nav ul li.logo input[type="text"] {
+    margin-right: 10px; /* Añade un espacio entre el campo de entrada y el botón */
+}
+
+nav ul li.logo button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+nav ul li.logo button:hover {
+    background-color: #444;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+
+
+main {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.loguito{
+	border-radius: 10px;
+	max-width: 150px;
+}
+.background-pattern {
+    background-image: radial-gradient(
+        rgba(255, 255, 255, 0.1) 9%, 
+        transparent 30%
+    );
+    background-size: 12vmin 12vmin;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.background-image {
+    background-image: url(https://assets.brightspot.abebooks.a2z.com/dims4/default/7508104/2147483647/strip/true/crop/1240x930+0+0/resize/800x600!/format/jpg/quality/90/?url=http%3A%2F%2Fabebooks-brightspot.s3.us-west-2.amazonaws.com%2F1b%2Ff7%2F4aa3eed34488bdf8b20700c1c3b5%2Flrg-promo-rare-directory.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.7;
+}
+
+
+.titulo-destacado {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    width: 100%;
+}
+
+.titulo-destacado h1 {
+    font-size: 48px;
+    color: #fff;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 0;
+    display: inline-block;
+	animation: floatAnimation 2s infinite;
+}
+@keyframes floatAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+}
